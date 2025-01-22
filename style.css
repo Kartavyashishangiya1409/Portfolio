@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", serif;
+}
+body{
+    background: rgb(88,14,165);
+    background: linear-gradient(90deg, rgba(88,14,165,1) 0%, rgba(1,1,12,1) 50%, rgba(21,80,137,1) 100%);
+    /* scrollbar-width: none; */
+}
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* scrollbar-color: #cfcfcf3c #164F88; */
+
+}
+.navbar .navleft h1, span{
+    font-family: "Unbounded", serif;
+}
+.navbar .navright a{
+    position: relative;
+}
+.navbar .navright a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background: #E9580B;
+    transition: 0.3s;
+    transform: scale(0);
+}
+.navbar .navright a:hover::before{
+    transform: scale(1);
+}
+.hero-section .hero-left h1, span{
+    font-family: "Unbounded", serif;
+}
+/* .hero-section .hero-right{
+    background-image: url(./assets/final-profile-pic.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+} */
+.bn632-hover {
+    width: 195px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 60px;
+    text-align:center;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+  
+.bn632-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+  
+.bn632-hover:focus {
+    outline: none;
+}
+  
+.bn632-hover.bn21 {
+    background-image: linear-gradient(
+      to right,
+      #580EA5,
+      #135088,
+      #135088,
+      #580EA5
+    );
+    box-shadow: 0px 0px 50px 2px #cfc7c7c2;
+}
+.about-text .bg h1, span{
+    font-family: "Unbounded", serif;
+}
+.about-me .about-right h2{
+    font-family: "Unbounded", serif;
+}
+.skills-text .bg h1, span{
+    font-family: "Unbounded", serif;
+}
+.projects-text .bg h1, span{
+    font-family: "Unbounded", serif;
+}
+.project1 h3{
+    font-family: "Unbounded", serif;
+}
+.project1 .img img{
+    transition: 0.5s;
+}
+.contact-text .bg h1, span{
+    font-family: "Unbounded", serif;
+}
+.marquee {
+    width: 90%;
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap;
+    box-sizing: border-box;
+    display: flex; /* Ensure content is centered */
+    margin-left: 5%;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.marquee-content {
+    display: inline-flex; /* Arrange images in a row */
+    animation: scroll-left-to-right 15s linear infinite;
+}
+
+.marquee-content img {
+    width: 150px; /* Set image width */
+    height: auto;
+    flex-shrink: 0; /* Prevent images from resizing */
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+@keyframes scroll-left-to-right {
+    0% {
+      transform: translateX(-100%); /* Start fully off-screen to the left */
+    }
+    100% {
+      transform: translateX(0); /* End fully visible at the starting position */
+    }
+}
+@media (max-width: 1023px){
+    .navbar .navright a::before{
+        display: none;
+    }
+}
+  
